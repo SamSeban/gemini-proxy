@@ -1,0 +1,16 @@
+{
+    "name": "gemini-proxy",
+    "version": "1.0.0",
+    "description": "Cloudflare Worker proxy for Gemini API calls.",
+    "main": "src/index.js",
+    "scripts": {
+      "start": "wrangler dev",
+      "publish": "wrangler publish"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+      "wrangler": "^2.0.0"
+    }
+  }
+  
