@@ -12,7 +12,7 @@ addEventListener('fetch', event => {
     
     // Forward the request body from the client.
     const body = await request.text();
-    
+
     const init = {
       method: 'POST',
       headers: {
@@ -24,7 +24,7 @@ addEventListener('fetch', event => {
     // Make the API request.
     const response = await fetch(endpoint, init);
     const result = await response.text();
-  
+
     // Return the response to the client.
     return new Response(result, {
       headers: { 'Content-Type': 'application/json' }
